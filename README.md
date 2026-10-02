@@ -1,9 +1,5 @@
-# Rubix 🧩
+# Rubix
 ### Intelligent Cipher Detector & Multi-Layer Decryptor
-
-![Java](https://img.shields.io/badge/Java-21%2B-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-blue?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 **Rubix** is a cryptographic identification and decryption tool written in Java. It automatically detects, scores, and decrypts classic ciphers, binary encodings, and nested multi-layer payloads (e.g. Morse Code &rarr; Hexadecimal &rarr; English) without requiring the user to know the cipher type or key in advance.
 
@@ -11,7 +7,7 @@ Powered by statistical heuristics—including **Chi-Square ($\chi^2$) frequency 
 
 ---
 
-## ✨ Features
+## Features
 
 - **Automated Scheme Detection**: Automatically classifies ciphertext and determines the best decryption candidate with a confidence percentage.
 - **Multi-Layer / Recursive Pipeline**: Automatically unpacks nested ciphers (e.g., `Morse Code -> Hexadecimal -> Plaintext` or `Base64 -> ROT13 -> Plaintext`).
@@ -26,7 +22,7 @@ Powered by statistical heuristics—including **Chi-Square ($\chi^2$) frequency 
 
 ---
 
-## 🔐 Supported Ciphers & Encodings
+## Supported Ciphers & Encodings
 
 | Scheme | Description | Key Recovery / Method |
 | :--- | :--- | :--- |
@@ -42,7 +38,7 @@ Powered by statistical heuristics—including **Chi-Square ($\chi^2$) frequency 
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - [Java SE Development Kit (JDK) 21+](https://www.oracle.com/java/technologies/downloads/) (Java 22 or 25 recommended for direct source launching).
@@ -56,7 +52,7 @@ cd rubix
 
 ---
 
-## 💻 Usage
+## Usage
 
 ### 1. Launching the GUI
 Run directly from source:
@@ -127,7 +123,7 @@ This compiles the classes into an isolated temporary directory, packages `rubix.
 
 ---
 
-## 📂 Project Architecture
+## Project Architecture
 
 ```
 rubix/
@@ -152,14 +148,7 @@ rubix/
 
 ---
 
-## 👤 Author
+## Author
 
-**Marcus "Yeti" Podnar**
-- GitHub: [@TheCanadianYeti](https://github.com/TheCanadianYeti)
-- LinkedIn: [marcus-podnar](https://www.linkedin.com/in/marcus-podnar/)
+[Marcus Podnar](https://marcus.podnar.ca) · [GitHub](https://github.com/TheCanadianYeti) · [LinkedIn](https://www.linkedin.com/in/marcus-podnar-582187260/)
 
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
