@@ -13,10 +13,17 @@ public class RubixEngine {
         this.validator = new TextValidator();
         this.decryptors = new ArrayList<>();
 
+        // Encodings and Byte Level
         decryptors.add(new HexDecryptor());
         decryptors.add(new Base64Decryptor());
+        decryptors.add(new BinaryStreamDecryptor());
+        decryptors.add(new SingleByteXorDecryptor());
+
+        // Classical Ciphers
         decryptors.add(new CaesarDecryptor());
+        decryptors.add(new AffineDecryptor());
         decryptors.add(new VigenereDecryptor());
+        decryptors.add(new RailFenceDecryptor());
         decryptors.add(new ReverseDecryptor());
         decryptors.add(new AtbashDecryptor());
         decryptors.add(new MorseDecryptor());
@@ -40,7 +47,9 @@ public class RubixEngine {
                     // Check for nested/multi-layer decryption (e.g. Morse -> Hex -> Text)
                     if (depth < 2 && result.getConfidence() < 0.85 && !result.getPlaintext().trim().equalsIgnoreCase(ciphertext.trim())) {
                         DecryptionResult nextLayer = process(result.getPlaintext(), depth + 1);
-                        if (nextLayer != null && nextLayer.getConfidence() >= result.getConfidence()) {
+                        if (nextLayer != null 
+                                && nextLayer.getConfidence() >= result.getConfidence()
+                                && !nextLayer.getPlaintext().trim().equalsIgnoreCase(ciphertext.trim())) {
                             result = new DecryptionResult(
                                 result.getScheme() + " -> " + nextLayer.getScheme(),
                                 nextLayer.getPlaintext(),

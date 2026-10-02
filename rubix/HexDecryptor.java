@@ -29,10 +29,9 @@ public class HexDecryptor implements Decryptor {
                 return null;
             }
             double confidence = validator.evaluateText(decoded);
-            if (confidence < 0.40) {
-                confidence = 0.70;
+            if (confidence >= 0.40) {
+                return new DecryptionResult(getName(), decoded, confidence);
             }
-            return new DecryptionResult(getName(), decoded, confidence);
         } catch (Exception ignored) {
         }
         return null;

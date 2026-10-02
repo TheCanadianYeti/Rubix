@@ -1,0 +1,13 @@
+*A Series of Text Strings to Test With*
+
+Affine: Zrc kewsg npaov hat beqfu ajcp zrc lidy xam.
+Rail Fence (Continuous): wecrlteerdsoeefeaocaivden
+Rail Fence (Spaced): tesce eh ertky
+Binary: 01101001 01101110 01110011 01110100 01110010 01110101 01100011 01110100 01101001 01101111 01101110 01110011 00100000 01110010 01100101 01110001 01110101 01101001 01110010 01100101 01100100
+Single-Byte XOR: 293f39283f2e7a3334292e282f392e333534297a3c352f343e
+Caesar: Wkh txlfn eurzq ira mxpsv ryhu wkh odcb grj.
+ROT13: Gur fvtany vf npgvir naq pbasvezrq.
+Atbash: Gsv jfrxp yildm ulc qfnkh levi gsv ozab wlt.
+Base64: VGhlIHN5c3RlbSBpcyByZWFkeSBmb3IgYWN0aW9uLg==
+Hexadecimal: 54686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e
+Reverse: ytilibapac noitpyrced weN
